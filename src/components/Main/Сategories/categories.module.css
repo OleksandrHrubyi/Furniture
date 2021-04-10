@@ -1,0 +1,210 @@
+.section {
+  text-align: center;
+}
+
+.secondaryContainer {
+  margin-bottom: 50px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 125%;
+}
+
+.iconBox:hover .iconCateg {
+  fill: #44c697;
+}
+
+.listThings {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.listThingsItem {
+  position: relative;
+  /* width: calc((100% - 4 * 15px) / 2); */
+  margin: 15px;
+  transition: transform 0.2s;
+}
+
+.iconCateg {
+  display: none;
+}
+
+@media screen and (max-width: 1079px) {
+  .iconBox {
+    padding: 10px 15px;
+    background-color: #9ca0a085;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .subContainer {
+    padding: 0px 0px;
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .listThingsItem {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  .iconCateg {
+    display: block;
+  }
+
+  .subContainer {
+    padding: 0px 105px;
+    margin-bottom: 84px;
+  }
+  .title {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .listThingsItem {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+.listThingsItem:hover {
+  transform: scale(1.03);
+  background-color: #44c697;
+  color: white;
+  cursor: pointer;
+}
+
+.linkThings:hover {
+  color: white;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.btnCat {
+  padding: 14px 46px;
+  background-color: #44c697;
+  border-radius: 3px;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.btnCat:hover {
+  color: #1e2e36;
+}
+
+.subTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.oldPrice {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  text-decoration: line-through;
+}
+
+.deactivePrice {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  text-decoration: line-through;
+  color: #bcbdbb;
+}
+
+.priceTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  margin-right: 10px;
+}
+
+.priceTitleActive {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  color: #ff1b1b;
+  line-height: 105%;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1080px) {
+  .subTitle {
+    font-size: 24px;
+    line-height: 125%;
+  }
+  .priceTitle {
+    font-size: 24px;
+    line-height: 125%;
+  }
+
+  .priceTitleActive {
+    font-size: 24px;
+    line-height: 125%;
+    margin-right: 10px;
+  }
+}
+
+.stickContainer {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+
+.itemStick {
+  display: flex;
+  padding: 5px 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2e36;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  margin-bottom: 10px;
+}
+
+.itemStick:nth-child(even) {
+  background-color: #ff1b1b;
+}
+
+.listThingsItem:hover .deactivePrice {
+  color: white;
+}
+
+.priceContainer {
+  display: flex;
+}
+
+.listThingsItem:hover .priceTitleActive,
+.listThingsItem:focus .priceTitleActive {
+  color: white;
+}

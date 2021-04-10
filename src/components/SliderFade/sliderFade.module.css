@@ -1,0 +1,100 @@
+.slider {
+  position: relative;
+}
+
+.news {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 5px;
+}
+
+.subTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 5px 10px;
+  margin-bottom: 45px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 100%;
+  background: #44c697;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  outline: none;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1080px) {
+  .news {
+    font-size: 64px;
+
+    margin-bottom: 50px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 125%;
+    margin-bottom: 10px;
+  }
+  .subTitle {
+    font-size: 36px;
+    line-height: 125%;
+    margin-bottom: 30px;
+  }
+  .btn {
+    padding: 14px 46px;
+
+    font-size: 18px;
+    line-height: 125%;
+  }
+}
+
+.sliderCount {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.btnArrSliderLeft {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: white;
+  left: 108px;
+  top: 469px;
+  cursor: pointer;
+}
+
+.btnArrSliderRight {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: white;
+  right: 108px;
+  top: 469px;
+  cursor: pointer;
+}

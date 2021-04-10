@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  height: 355px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../../image/banner2x.jpg);
+}
+
+.add {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 50px 35px;
+  width: 462px;
+  border-left: 15px solid #44c697;
+  position: absolute;
+  top: 0px;
+  left: 51px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+  .add {
+    padding: 100px 75px;
+  }
+}
+
+.add {
+  display: none;
+}
+
+@media screen and (min-width: 1080px) {
+  .add {
+    display: block;
+    padding: 100px 75px;
+    height: 670px;
+  }
+
+  .container {
+    height: 785px;
+  }
+}

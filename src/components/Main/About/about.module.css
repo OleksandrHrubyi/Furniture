@@ -1,0 +1,67 @@
+.section {
+  padding: 50px 0px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 125%;
+  margin: 0px 0px 50px 0px;
+  text-align: center;
+}
+
+.teamImg {
+  max-width: 1407px;
+  height: auto;
+}
+
+.aboutContainer {
+  position: absolute;
+  border-right: 15px solid #44c697;
+  max-width: 791px;
+  left: 10px;
+  top: 100px;
+  bottom: 100px;
+  padding: 50px 30px 50px;
+  background-color: white;
+  z-index: 1;
+  overflow: auto;
+}
+
+@media screen and (min-width: 1080px) {
+  .section {
+    padding: 100px 0px;
+  }
+  .aboutContainer {
+    left: 10px;
+    top: 100px;
+    bottom: 100px;
+    padding: 50px 30px 50px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}
+
+.article {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 125%;
+  color: #1e2e36;
+}
+.subName {
+  color: #44c697;
+}
+
+.articleText:not(:last-child) {
+  margin-bottom: 15px;
+}

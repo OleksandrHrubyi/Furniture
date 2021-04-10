@@ -1,0 +1,74 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btnContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.btnBin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 20px 7px 0px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btnBin:hover {
+  transform: scale(1.1);
+}
+
+.btnCall {
+  padding: 5px;
+  background-color: #44c697;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.btnCall:hover {
+  transform: scale(1.1);
+}
+
+.binIcon {
+  margin-right: 5px;
+}
+
+.logoContainer {
+  display: none;
+}
+
+@media screen and (min-width: 1480px) {
+  .logoContainer {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .btnContainer {
+    margin-left: auto;
+  }
+  .btnBin {
+    font-size: 18px;
+    padding: 10.5px 30px 10.5px 0px;
+  }
+  .btnCall {
+    padding: 14px 46px;
+    font-size: 18px;
+  }
+}

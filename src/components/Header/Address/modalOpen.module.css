@@ -1,0 +1,43 @@
+.enter {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.enterActive {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 250ms linear;
+}
+
+.exit {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.exitActive {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 250ms linear;
+}
+
+.mobileBox {
+  position: relative;
+}
+
+@media screen and (max-width: 420px) {
+  .navMobile {
+    position: absolute;
+    border: 1px solid #1e2e36;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px 45px;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .mobileBox {
+    display: none;
+  }
+}

@@ -1,0 +1,134 @@
+.slide {
+  margin: 0 -15px;
+}
+
+.slide1 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      0deg,
+      rgba(30, 46, 54, 0.5),
+      rgba(30, 46, 54, 0.5)
+    ),
+    url(../../image/img1.png);
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0 15px;
+  height: 350px;
+}
+
+.slide2 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  height: 350px;
+  margin: 0 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      0deg,
+      rgba(30, 46, 54, 0.5),
+      rgba(30, 46, 54, 0.5)
+    ),
+    url(../../image/img2.png);
+}
+
+.slide3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      0deg,
+      rgba(30, 46, 54, 0.5),
+      rgba(30, 46, 54, 0.5)
+    ),
+    url(../../image/img3.png);
+  padding: 30px;
+  margin: 0 15px;
+  box-sizing: border-box;
+}
+
+.slide4 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  height: 350px;
+  margin: 0 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: teal;
+}
+
+.title {
+  margin: 0px 0px 3px;
+  padding: 5px 0px;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.subTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 100%;
+  color: white;
+}
+
+.dash {
+  width: 100%;
+  height: 3px;
+  background-color: #44c697;
+}
+
+.dash1 {
+  width: 100%;
+  height: 3px;
+  background-color: #44c697;
+  margin-bottom: 5px;
+}
+
+.dash3 {
+  width: 100%;
+  height: 3px;
+  background-color: #44c697;
+}
+
+.sliderContainer {
+  text-align: start;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 36px;
+    line-height: 125%;
+  }
+
+  .subTitle {
+    font-size: 18px;
+    line-height: 125%;
+  }
+  .dash {
+    width: 370px;
+  }
+  .dash1 {
+    width: 190px;
+  }
+  .dash3 {
+    width: 275px;
+  }
+}

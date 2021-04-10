@@ -1,0 +1,60 @@
+.container {
+  margin-right: auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 720px) {
+  .item {
+    margin-right: 5px;
+    margin-bottom: 0px;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0px;
+}
+
+.btn:focus,
+.btn:hover {
+  color: #44c697;
+  cursor: pointer;
+}
+
+.box {
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 1650px) {
+  .item {
+    margin-right: 15px;
+  }
+  .box {
+    font-size: 18px;
+  }
+}
