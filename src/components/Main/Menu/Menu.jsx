@@ -4,32 +4,7 @@ import Logo from "../../Logo/Logo";
 import { ReactSVG } from "react-svg";
 import basketIcon from "../../../image/basc.svg";
 import logoIcon from "../../../image/logo.svg";
-const range = [
-  {
-    name: "ДИВАНИ",
-    link: "/",
-  },
-  {
-    name: "ЛІЖКА",
-    link: "/",
-  },
-  {
-    name: "КРІСЛА",
-    link: "/",
-  },
-  {
-    name: "КОМОДИ",
-    link: "/",
-  },
-  {
-    name: "ШАФИ",
-    link: "/",
-  },
-  {
-    name: "КУХНЯ",
-    link: "/",
-  },
-];
+import { range } from "../../../data/categories";
 
 function Menu() {
   return (

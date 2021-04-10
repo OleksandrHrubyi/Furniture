@@ -7,6 +7,7 @@ import * as PNotifyMobile from "@pnotify/mobile";
 import "@pnotify/mobile/dist/PNotifyMobile.css";
 import "@pnotify/core/dist/BrightTheme.css";
 import questionImg from "../../../image/question.jpg";
+import questionImg1 from "../../../image/quest1x.jpg";
 
 defaultModules.set(PNotifyMobile, {});
 
@@ -58,7 +59,11 @@ function Question({ onSubmit }) {
       <h2 className={styles.title}>Залишились питання?</h2>
       <div className={styles.container}>
         <div>
-          <img className={styles.img} src={questionImg} alt="team" />
+          <picture>
+            <source media="(max-width: 600px)" srcSet={questionImg1} />
+            <source media="(min-width: 601px)" srcSet={questionImg} />
+            <img className={styles.img} src={questionImg} alt="our team" />
+          </picture>
         </div>
         <div className={styles.aboutContainer}>
           <form className={styles.form} onSubmit={handleSubmit}>

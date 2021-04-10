@@ -1,5 +1,6 @@
 import styles from "./about.module.css";
 import aboutImg from "../../../image/about.jpg";
+import aboutImg1x from "../../../image/about1x.jpg";
 
 function About() {
   return (
@@ -7,7 +8,11 @@ function About() {
       <h2 className={styles.title}>Про нас</h2>
       <div className={styles.container}>
         <div>
-          <img className={styles.teamImg} src={aboutImg} alt="team" />
+          <picture>
+            <source media="(max-width: 600px)" srcSet={aboutImg1x} />
+            <source media="(min-width: 601px)" srcSet={aboutImg} />
+            <img className={styles.teamImg} src={aboutImg} alt="our team" />
+          </picture>
         </div>
         <div className={styles.aboutContainer}>
           <article className={styles.article}>

@@ -1,7 +1,6 @@
 import styles from "./categories.module.css";
 import { NavLink, withRouter } from "react-router-dom";
 import { ReactSVG } from "react-svg";
-
 import { dataCategories, dataThings } from "../../../data/categories";
 
 function Categories() {
@@ -34,7 +33,12 @@ function Categories() {
               <li className={styles.listThingsItem} key={el.title}>
                 <a className={styles.linkThings} href="/">
                   <div>
-                    <img className={styles.img} src={el.src} alt={el.title} />
+                    <picture>
+                      <source media="(max-width: 600px)" srcSet={el.src1x} />
+                      <source media="(min-width: 601px)" srcSet={el.src} />
+                      <img className={styles.img} src={el.src} alt={el.title} />
+                    </picture>
+                    {/* <img className={styles.img} src={el.src} alt={el.title} /> */}
                   </div>
                   <div className={styles.info}>
                     <h3 className={styles.subTitle}>{el.title}</h3>

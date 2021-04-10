@@ -1,4 +1,3 @@
-import styles from "./main.module.css";
 import Menu from "../Main/Menu/Menu";
 import Banner from "../Main/Banner/Banner";
 import MainContainer from "./MainContainer/MainContainer";
@@ -9,7 +8,7 @@ import Question from "./Question/Question";
 
 function Main() {
   return (
-    <main className={styles.main}>
+    <main>
       <MainContainer>
         <Menu />
       </MainContainer>

@@ -4,7 +4,24 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../../../image/banner2x.jpg);
+}
+
+@media screen and (max-width: 959px) {
+  .container {
+    background-image: url(../../../image/ban960.jpg);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    background-image: url(../../../image/ban1900.jpg);
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .container {
+    background-image: url(../../../image/banner2x.jpg);
+  }
 }
 
 .add {
