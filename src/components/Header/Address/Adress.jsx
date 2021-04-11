@@ -1,24 +1,15 @@
-import styles from "./address.module.css";
-import stylesModal from "./modalOpen.module.css";
 import React, { useState } from "react";
-import Navigation from "../Navigation/Navigation";
+import { NavLink, withRouter } from "react-router-dom";
+import { BsPhone } from "react-icons/bs";
 import { CSSTransition } from "react-transition-group";
 import { ReactSVG } from "react-svg";
-import logoMobile from "../../../image/logoMobile.svg";
-// import { FaTelegramPlane, FaFacebookF } from "react-icons/fa";
-// import { AiOutlineInstagram } from "react-icons/ai";
-import { BsPhone } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
+import { dataNav } from "../../../data/categories";
+import styles from "./address.module.css";
+import stylesModal from "./modalOpen.module.css";
+import Navigation from "../Navigation/Navigation";
+import logoMobile from "../../../image/logoMobile.svg";
 import SocNet from "../SocNet/SocNet";
-import { NavLink, withRouter } from "react-router-dom";
-
-const data = [
-  { name: "ГОЛОВНА", link: "/main" },
-  { name: "АКЦІЇ", link: "/promo" },
-  { name: "ДОСТАВКА ТА ОПЛАТА", link: "/delivery" },
-  { name: "ПРО НАС", link: "/about" },
-  { name: "КОНТАКТИ", link: "/contacts" },
-];
 
 function Address() {
   const [modal, setModal] = useState(false);
@@ -74,7 +65,7 @@ function Address() {
         </div>
       </div>
       <nav className={styles.nav}>
-        <Navigation list={data} />
+        <Navigation list={dataNav} />
       </nav>
       <div className={stylesModal.mobileBox}>
         <button
@@ -92,7 +83,7 @@ function Address() {
           classNames={stylesModal}
         >
           <nav className={stylesModal.navMobile}>
-            <Navigation list={data} />
+            <Navigation list={dataNav} />
           </nav>
         </CSSTransition>
       </div>

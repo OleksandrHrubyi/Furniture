@@ -1,5 +1,6 @@
 import styles from "./navigation.module.css";
 import { NavLink, withRouter } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function Navigation({ list }) {
   return (
@@ -22,5 +23,9 @@ function Navigation({ list }) {
     </ul>
   );
 }
+
+Navigation.propTypes = {
+  list: PropTypes.array,
+};
 
 export default withRouter(Navigation);

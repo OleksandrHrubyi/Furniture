@@ -4,11 +4,6 @@
   justify-content: center;
 }
 
-/* @media screen and(max-width: '420px') {
-  .navigation {
-    flex-wrap: nowrap;
-  }
-} */
 .item {
   padding: 5px;
   margin-right: 15px;

@@ -2,21 +2,3 @@
   max-width: 1920px;
   margin: 0 auto;
 }
-
-/* @media screen and (max-width: 760px) {
-  .wrapper {
-    width: 760px;
-  }
-}
-
-@media screen and (min-width: 1180px) {
-  .wrapper {
-    width: 1180px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .wrapper {
-    width: 1920px;
-  }
-} */

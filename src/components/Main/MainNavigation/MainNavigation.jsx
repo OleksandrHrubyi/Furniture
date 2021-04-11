@@ -1,10 +1,8 @@
 import styles from "./mainNavigation.module.css";
 import { IoIosArrowDown } from "react-icons/io";
+import PropTypes from "prop-types";
 
 function MainNavifation({ data }) {
-  const handleOnclick = (event) => {
-    console.log(event);
-  };
   return (
     <nav className={styles.container}>
       <ul className={styles.list}>
@@ -12,7 +10,6 @@ function MainNavifation({ data }) {
           return (
             <li className={styles.item} key={el.name}>
               <button
-                onClick={handleOnclick}
                 type="button"
                 value={el.name}
                 className={styles.btn}
@@ -30,5 +27,9 @@ function MainNavifation({ data }) {
     </nav>
   );
 }
+
+MainNavifation.propTypes = {
+  data: PropTypes.array,
+};
 
 export default MainNavifation;

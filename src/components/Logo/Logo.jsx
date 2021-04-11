@@ -1,5 +1,6 @@
 import styles from "./logo.module.css";
 import { ReactSVG } from "react-svg";
+import PropTypes from "prop-types";
 
 function Logo({ src }) {
   return (
@@ -11,4 +12,9 @@ function Logo({ src }) {
     </div>
   );
 }
+
+Logo.propTypes = {
+  src: PropTypes.string,
+};
+
 export default Logo;

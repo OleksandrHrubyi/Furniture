@@ -4,6 +4,7 @@
   align-items: center;
   padding: 10px 0px;
 }
+
 .logoMobile {
   display: none;
 }
@@ -12,6 +13,7 @@
   .addressContainer {
     flex-direction: column-reverse;
   }
+
   .logoMobile {
     display: block;
     padding: 10px;
@@ -20,7 +22,6 @@
 
 .socialContainer {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   margin-right: 50px;
@@ -50,6 +51,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .list {
   display: flex;
   margin-right: 50px;

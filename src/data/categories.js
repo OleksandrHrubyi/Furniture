@@ -168,3 +168,27 @@ export const range = [
     link: "/",
   },
 ];
+
+export const dataItem = [
+  { name: "ДИВАНИ", link: "/sofa" },
+  { name: "ЛІЖКА", link: "/bed" },
+  { name: "КРІСЛА", link: "/armchair" },
+  { name: "ШАФИ", link: "/wardrobe" },
+  { name: "КУХНІ", link: "/kitchen" },
+  { name: "КОМОДИ", link: "/dressers" },
+];
+
+export const dataLink = [
+  { name: "AКЦІЇ", link: "/promo" },
+  { name: "ДОСТАВКА ТА ОПЛАТА", link: "/delivery" },
+  { name: "ПРО НАС", link: "/about" },
+  { name: "КОНТАКТИ", link: "/contacts" },
+];
+
+export const dataNav = [
+  { name: "ГОЛОВНА", link: "/main" },
+  { name: "АКЦІЇ", link: "/promo" },
+  { name: "ДОСТАВКА ТА ОПЛАТА", link: "/delivery" },
+  { name: "ПРО НАС", link: "/about" },
+  { name: "КОНТАКТИ", link: "/contacts" },
+];

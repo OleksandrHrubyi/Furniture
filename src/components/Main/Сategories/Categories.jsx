@@ -38,7 +38,6 @@ function Categories() {
                       <source media="(min-width: 601px)" srcSet={el.src} />
                       <img className={styles.img} src={el.src} alt={el.title} />
                     </picture>
-                    {/* <img className={styles.img} src={el.src} alt={el.title} /> */}
                   </div>
                   <div className={styles.info}>
                     <h3 className={styles.subTitle}>{el.title}</h3>

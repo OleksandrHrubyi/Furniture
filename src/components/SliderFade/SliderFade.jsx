@@ -1,9 +1,7 @@
 import styles from "./sliderFade.module.css";
 import arrLeft from "../../image/arrLeft.svg";
 import arrRight from "../../image/arrRight.svg";
-
 import { ReactSVG } from "react-svg";
-
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { sliderBanner } from "../../data/categories";

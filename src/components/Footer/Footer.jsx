@@ -1,6 +1,5 @@
 import styles from "./footer.module.css";
 import { NavLink, withRouter } from "react-router-dom";
-
 import footerImg from "../../image/footer.jpg";
 import Logo from "../Logo/Logo";
 import logoIconWhite from "../../image/logoWhite.svg";
@@ -11,22 +10,7 @@ import calendar from "../../image/calendar.svg";
 import SocNet from "../Header/SocNet/SocNet";
 import logoCompany from "../../image/logoCompany.svg";
 import { AiOutlineArrowUp } from "react-icons/ai";
-
-const data = [
-  { name: "ДИВАНИ", link: "/sofa" },
-  { name: "ЛІЖКА", link: "/bed" },
-  { name: "КРІСЛА", link: "/armchair" },
-  { name: "ШАФИ", link: "/wardrobe" },
-  { name: "КУХНІ", link: "/kitchen" },
-  { name: "КОМОДИ", link: "/dressers" },
-];
-
-const dataLink = [
-  { name: "AКЦІЇ", link: "/promo" },
-  { name: "ДОСТАВКА ТА ОПЛАТА", link: "/delivery" },
-  { name: "ПРО НАС", link: "/about" },
-  { name: "КОНТАКТИ", link: "/contacts" },
-];
+import { dataItem, dataLink } from "../../data/categories";
 
 function Footer() {
   const handleOnclick = () => {
@@ -44,7 +28,7 @@ function Footer() {
             <div className={styles.footerContainer}>
               <section className={styles.section}>
                 <ul className={styles.footerList}>
-                  {data.map((el) => {
+                  {dataItem.map((el) => {
                     return (
                       <li key={el.name} className={styles.item}>
                         <NavLink className={styles.link} to={el.link}>

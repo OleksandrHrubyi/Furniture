@@ -1,8 +1,8 @@
-import styles from "./soc.module.css";
 import { FaTelegramPlane, FaFacebookF } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { IconContext } from "react-icons";
-
+import PropTypes from "prop-types";
+import styles from "./soc.module.css";
 function SocNet({ color }) {
   return (
     <>
@@ -51,5 +51,9 @@ function SocNet({ color }) {
     </>
   );
 }
+
+SocNet.propTypes = {
+  children: PropTypes.string,
+};
 
 export default SocNet;
